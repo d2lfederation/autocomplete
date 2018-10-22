@@ -151,7 +151,7 @@
 					*/
 					_suggestions: {
 						type: Array,
-						value: [],
+						value: function() { return [] },
 						observer: '_suggestionsChanged'
 					},
 					/**
@@ -159,7 +159,7 @@
 					*/
 					data: {
 						type: Array,
-						value: [],
+						value: function() { return [] },
 					},
 					/**
 					* Function used to filter `data`
